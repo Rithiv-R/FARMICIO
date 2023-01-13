@@ -1,0 +1,39 @@
+
+.con1{
+    margin: 10px;
+    border: solid;
+    border-radius: 20px;
+    padding: 8px 5px;
+    width: 300px;
+    background-color: white;
+}
+
+.field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10px;
+    
+}
+
+.field input{
+    font-size: 13px;
+    font-family: 'Comic Neue', cursive;
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+    
+}
+
+.field input:focus{
+    outline: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: black;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+
+.con1{
+    padding: 10px 15px;
+    width: 180px;
+}
+
+.card{
+    background-color: rgba(0, 162, 108, 0.075);
+    border: 1px dotted;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.icon{
+    padding: 10px;
+}
+
+.icon img{
+    height: 100px;
+    width: 125px;
+    object-fit: contain;
+}
+
+
+.title h2{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Artifika', serif;
+}
+
+.card:hover{
+    transform: scale(1.07);
+}

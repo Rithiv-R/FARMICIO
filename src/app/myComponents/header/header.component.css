@@ -1,0 +1,35 @@
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(51, 255, 0, 0.173);
+    box-shadow: 0 0 50px 50px white inset;
+
+}
+
+.content{
+    max-width: 350px;
+    text-align: end;
+}
+
+.content h1{
+    font-size: 45px;
+    line-height: 50px;
+    font-family: 'baron';
+}
+
+.content p{
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+.content button{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Artifika', serif;
+    box-shadow: none;
+}

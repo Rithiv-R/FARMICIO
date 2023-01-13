@@ -1,0 +1,36 @@
+.con1{
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius: 25px;
+    border: 1px;
+    border-style: dotted;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+i{
+    font-size: 25px;
+}
+
+.img{
+    padding:20px;
+    background-color: aquamarine;
+    box-shadow: 0 0 5px 5px white inset;
+    border-radius: 50%;
+    
+
+}
+
+.content{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    width: 200px;
+    height: 110px;
+}

@@ -1,0 +1,55 @@
+.con1{
+    margin: 20px 20px;
+    width: 250px;
+}
+
+.card{
+    padding: 20px;
+    border: 1px;
+    border-style: dashed;
+    border-radius: 25px;
+}
+.content{
+    margin-top: 15px;
+
+}
+.content #name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content #price{
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    
+}
+.image img{
+    height: 210px;
+    width: 210px;
+    object-fit: contain;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link button{
+    padding: 5px 10px;
+    font-size: 11px;
+    margin-left: -5px;
+    background-color: rgba(32, 255, 32, 0.36);
+    border-radius: 10px;
+}
+
+.link i{
+    font-size: 16px;
+    
+}

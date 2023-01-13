@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+/*font-family: 'Artifika', serif;*/
+.con1{
+    padding: 20px 0px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title h3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Artifika', serif;
+    margin-right: 40px;
+}
+
+.title h2{
+    font-size: 30px;
+    font-family: 'Artifika', serif;
+    margin-left: 30px;
+}
+
+.offers{
+    display: flex;
+}

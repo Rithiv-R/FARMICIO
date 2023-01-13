@@ -1,0 +1,27 @@
+.con1{
+    margin: 10px 15px;
+    width: 385px;
+    border-radius: 25px;
+    border: 1px dashed;
+}
+.card{
+    padding:20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.image img{
+    height: 80px;
+    margin: 0px 20px 0px 0px;
+}
+
+.content h3{
+    font-size: large;
+}
+
+#p{
+    font-weight: 500;
+    font-size: large;
+    padding-left: 20px;
+}

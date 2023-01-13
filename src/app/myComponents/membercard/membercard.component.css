@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Artifika&family=Courgette&family=Righteous&display=swap');
+/*    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Artifika', serif;
+
+    font-family: 'Courgette', cursive;
+
+    font-family: 'Righteous', cursive;*/
+.con1{
+    margin: 10px;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: rgba(129, 20, 207, 0.582);
+    background-image: url('https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg'); 
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 75px;
+    border-radius: 10px;
+}
+.name{
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    font-family: 'baron';
+    margin-left: 50px;
+}
+
+.content{
+    font-size: 18px;
+    font-family: 'Artifika', serif;
+    max-width: 700px;
+}
+
+img{
+    margin-bottom: -5px;
+    margin-top: -40px;
+    height: 120px;
+}

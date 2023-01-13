@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "farmicio-338d5": {
+      "hosting": {
+        "farmicio": [
+          "farmicio-338d5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "farmicio-338d5"
+  }
+}

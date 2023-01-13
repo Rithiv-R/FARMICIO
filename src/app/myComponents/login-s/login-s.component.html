@@ -1,0 +1,20 @@
+
+  <div class="box1">
+    <div class="box">
+      <div class="head">SHOP's PORTAL</div>
+      <hr>
+      <div class="content">
+        <form>
+          <div class="input1">
+            <input #email type="text" placeholder="Email:" >
+          </div>
+          <div class="input1">
+            <input #password type="password" placeholder="Password:">
+          </div>
+          <div class="button1">
+            <a (click)="signin(email.value,password.value)">SHOP's SIGN-IN</a>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>

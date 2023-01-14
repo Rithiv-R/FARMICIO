@@ -13,4 +13,9 @@ export class ShopProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addtocart()
+  {
+    
+  }
+
 }

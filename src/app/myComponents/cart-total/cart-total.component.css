@@ -1,0 +1,33 @@
+.con1{
+    padding: 5px;
+    width: 300px;
+}
+
+.card{
+    border: 1px;
+    border-radius: 20px;
+    background-color: rgba(55, 184, 50, 0.168);
+    box-shadow: 0 0 5px 5px white inset;
+}
+
+.head{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+hr{
+    opacity: 0.2;
+}
+
+.entry, .sum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 14px;
+    margin: 0px 15px;
+}
+
+.sum{
+    padding-bottom: 10px;
+}

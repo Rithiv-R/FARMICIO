@@ -21,7 +21,12 @@ import { SignupSComponent } from './myComponents/signup-s/signup-s.component';
 import { SignerComponent } from './myComponents/signer/signer.component';
 import { FHomeComponent } from './myComponents/f-home/f-home.component';
 import { CartComponent } from './myComponents/cart/cart.component';
+import { CartAddonsComponent } from './myComponents/cart-addons/cart-addons.component';
 import { CartItemComponent } from './myComponents/cart-item/cart-item.component';
+import { CartItemcardComponent } from './myComponents/cart-itemcard/cart-itemcard.component';
+import { CartPremiumComponent } from './myComponents/cart-premium/cart-premium.component';
+import { CartSummComponent } from './myComponents/cart-summ/cart-summ.component';
+import { CartTotalComponent } from './myComponents/cart-total/cart-total.component';
 import { FeatureCardComponent } from './myComponents/feature-card/feature-card.component';
 import { FeaturesComponent } from './myComponents/features/features.component';
 import { FooterComponent } from './myComponents/footer/footer.component';
@@ -61,8 +66,14 @@ import { CategoryFullComponent } from './myComponents/category-full/category-ful
     SignupSComponent,
     SignerComponent,
     FHomeComponent,   
-    CartComponent ,
-    CartItemComponent ,
+    CartAddonsComponent,
+    CartComponent,
+    CartItemComponent,
+    CartItemcardComponent,
+    CartItemcardComponent,
+    CartPremiumComponent,
+    CartSummComponent,
+    CartTotalComponent,
     FeatureCardComponent ,
     FeaturesComponent ,
     FooterComponent,

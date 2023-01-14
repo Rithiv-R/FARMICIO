@@ -1,0 +1,15 @@
+
+.summary{
+    font-family:'Times New Roman', Times, serif;
+}
+.summary:hover{
+    background-color: aliceblue;
+}
+#button{
+    border-radius: 9px;
+    box-shadow: 1px 1px;
+    background-color: greenyellow;
+}
+#button:hover{
+    background-color:rgb(115, 192, 0);
+}

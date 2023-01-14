@@ -1,0 +1,67 @@
+.con1{
+    width: 450px;
+    padding: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border: 2px;
+    border-radius: 20px;
+    border-style: dotted;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+.image img{
+    border-radius: 10px;
+}
+
+.details #name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.details #by{
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.details #quan{ 
+    font-size: 16px;
+}
+
+.details #price{
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.details{
+    margin-left: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buttons i{
+    text-align: end;
+    font-size: 20px;
+    padding: 0px 10px 10px 10px;
+}
+
+.buttons select{
+    font-size: 15px;
+    width: 100px;
+    padding: 10px 10px;
+    margin-top: 35px;
+}

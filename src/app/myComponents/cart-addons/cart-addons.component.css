@@ -1,0 +1,40 @@
+.con1{
+    margin: 5px;
+    
+    width: 300px;
+}
+
+
+.addcoupn{
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+textarea{
+    resize: none;
+    width: 265px;
+    height: 100px;
+    font-size: 15px;
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.address button{
+    width: 265px;
+    margin-top: 20px;
+    border: 2px;
+    background-color: rgba(15, 140, 37, 0.826);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    bottom: unset;
+    margin-bottom: 20px;
+}

@@ -52,12 +52,30 @@ import { FaqComponent } from './myComponents/faq/faq.component';
 import { AboutusComponent } from './myComponents/aboutus/aboutus.component';
 import { ContactusComponent } from './myComponents/contactus/contactus.component';
 import { CategoryFullComponent } from './myComponents/category-full/category-full.component';
+import { FarmerLoginComponent } from './myComponents/farmer-login/farmer-login.component';
+import { FarmerSignupComponent } from './myComponents/farmer-signup/farmer-signup.component';
+import { UserLoginComponent } from './myComponents/user-login/user-login.component';
+import { UserSignupComponent } from './myComponents/user-signup/user-signup.component';
+import { UserLogin1Component } from './myComponents/user-login1/user-login1.component';
+import { UserSignup1Component } from './myComponents/user-signup1/user-signup1.component';
+import { PdAidebarComponent } from './myComponents/pd-aidebar/pd-aidebar.component';
+import { PdDetailsComponent } from './myComponents/pd-details/pd-details.component';
+import { PdHeaderComponent } from './myComponents/pd-header/pd-header.component';
+import { PdItemcardComponent } from './myComponents/pd-itemcard/pd-itemcard.component';
+import { PdOfferComponent } from './myComponents/pd-offer/pd-offer.component';
+import { PdReviewsComponent } from './myComponents/pd-reviews/pd-reviews.component';
+import { PdSidebarComponent } from './myComponents/pd-sidebar/pd-sidebar.component';
+import { PdSideofferComponent } from './myComponents/pd-sideoffer/pd-sideoffer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     CategorycardComponent,
+    FarmerLoginComponent,
+    FarmerSignupComponent,
+    UserLoginComponent,
+    UserSignupComponent,
     LoginSComponent,
     LoginFComponent,
     StartComponent,
@@ -96,7 +114,18 @@ import { CategoryFullComponent } from './myComponents/category-full/category-ful
     FaqComponent,
     AboutusComponent,
     ContactusComponent,
-    CategoryFullComponent ,
+    CategoryFullComponent,
+    UserLogin1Component,
+    UserSignup1Component,
+    PdAidebarComponent,
+    PdDetailsComponent,
+    PdHeaderComponent,
+    PdItemcardComponent,
+    PdOfferComponent,
+    PdReviewsComponent,
+    PdSidebarComponent,
+    PdSideofferComponent,
+    PdhomeComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

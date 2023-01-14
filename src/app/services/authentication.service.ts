@@ -26,6 +26,22 @@ export class AuthenticationService {
     });
   }
 
+  signin_s1(email:string,password:string,pid:string)
+  { 
+    this.afs.collection('shopuser').doc(email).get().toPromise().then((doc)=>{
+      if(doc?.exists)
+      {
+        this.auth.signInWithEmailAndPassword(email,password).then(()=>{
+          this.router.navigate(["product",pid])
+        })
+      }
+      else
+      {
+        window.alert('No Registered User')
+      }
+    });
+  }
+
   signup_s(email:string,password:string)
   {
     this.afs.collection('shopuser').doc(email).set({
@@ -38,6 +54,19 @@ export class AuthenticationService {
     })
    
   }
+
+  signup_s1(email:string,password:string,pid:string)
+  {
+    this.afs.collection('shopuser').doc(email).set({
+      email:email,
+      password:password,
+    }).then(()=>{
+      this.auth.createUserWithEmailAndPassword(email,password).then(()=>{
+        this.router.navigate(["product",pid])
+      })
+    })
+  }
+
 
   signin_f(email:string,password:string)
   {
@@ -68,4 +97,11 @@ export class AuthenticationService {
    
   }
   
+  signout()
+  {
+    this.auth.signOut().then(()=>{
+      this.router.navigate([""])
+    })
+  }
+
 }

@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="con1">
+    <div class="box1">
+      <div class="img1">
+        <img src="./../../../assets/images/ezgif-3-b62a0340c1-removebg-preview.png" width="300px">
+      </div>
+      <div class="box">
+        <div class="head">Login</div>
+        <hr size="5px">
+        <div class="content">
+          <form>
+            <div class="input1">
+              <label>Email:</label><br>
+              <input #email type="text">
+            </div>
+            <div class="input1">
+              <label>Password:</label><br>
+              <input #password type="password">
+            </div>
+            <div class="forgot">
+              <a  href="#" id="forgot">Forgot Password</a>
+            </div>
+            <div class="button1">
+                <a (click)="signin1(email.value,password.value)">SHOP's SIGN-in</a>
+              </div>
+          </form>
+          <div class="link" >
+            Dont have an account<br><a routerLink='[/signin1,pid]'>Register here</a>
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <img src="./../../../assets/images/shoper-removebg-preview.png" width="300px">
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'baron';
+    src: url('src\assets\FONT\BaronNeueBlack\Baron Neue.otf');
+  }
+
+  @font-face {
+    font-family: 'publicsans';
+    src: url('src\assets\FONT\Public_Sans\PublicSans-VariableFont_wght.ttf');
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

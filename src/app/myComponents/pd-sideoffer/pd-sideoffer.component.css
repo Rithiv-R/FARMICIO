@@ -1,0 +1,45 @@
+.con1{
+    margin: 15px 0px;
+    width: 300px;
+}
+
+.card{
+    border: 2px;
+    border-style: dotted;
+    padding: 15px;
+    border-radius: 20px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image{
+    padding: 0px 10px 0px 0px;
+}
+
+.info #head{
+    font-size: 14px;
+    display: flex;
+    font-weight: 500;
+    flex-direction: row;
+    align-items:center;
+    padding-bottom: 10px;
+}
+
+.info #head i{
+    font-size: 18px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    padding-top:10px;
+}
+
+.bottom .code{
+    font-size: 15px;
+    font-weight: 500;
+
+}

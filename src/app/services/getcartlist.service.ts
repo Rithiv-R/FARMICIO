@@ -18,8 +18,10 @@ export class GetcartlistService {
     })
   }
 
-  getlist() 
+  async getlist()
   {
+    console.log('s');
+    var temp1:any[] = [];
     var temp:any[] = [];
     this.afs.collection('cart').doc(this.email).collection('cartorders').get().toPromise().then((querysnapshot)=>{   
       querysnapshot?.forEach((doc)=>{
@@ -28,10 +30,11 @@ export class GetcartlistService {
           pid:doc.data()['pid'],
           quantity:doc.data()['quantity'],
           price:doc.data()['price'],
-        })
+        });
       })
+      console.log(temp);
+      return temp;
     });
-    return temp;
   }
 
 }

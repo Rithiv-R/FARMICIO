@@ -1,1 +1,33 @@
-<p>user-signup1 works!</p>
+<app-navbar></app-navbar>
+
+<div class="con1">
+  <div class="box1">
+    <div class="img1">
+      <img src="./../../../assets/images/ezgif-3-b62a0340c1-removebg-preview.png" width="300px">
+    </div>
+    <div class="box">
+      <div class="head">Signup</div>
+      <hr size="5px">
+      <div class="content">
+        <form>
+            <div class="input1">
+                <label>Email:</label><br>
+                <input #email type="text">
+            </div>
+            <div class="input1">
+                <label>Password:</label><br>
+                <input #password type="password">
+            </div>
+            <div class="button1">
+                <a (click)="signup1(email.value,password.value)">Sign up</a>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="img1">
+        <img src="./../../../assets/images/shoper-removebg-preview.png" width="300px">
+    </div>
+  </div>
+</div>
+
+<app-footer class="footer"></app-footer>

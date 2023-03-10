@@ -11,11 +11,13 @@ export class CartComponent implements OnInit {
 
 
   itemarray!:any;
-  constructor(public service:GetcartlistService) { }
+  constructor(public service:GetcartlistService) {
+    this.itemarray = this.service.getlist();
+    console.log('s1');
+      console.log(this.itemarray);
+  }
 
   ngOnInit(): void {
-      this.itemarray = this.service.getlist();
-      
   }
 
 

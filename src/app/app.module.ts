@@ -66,6 +66,10 @@ import { PdOfferComponent } from './myComponents/pd-offer/pd-offer.component';
 import { PdReviewsComponent } from './myComponents/pd-reviews/pd-reviews.component';
 import { PdSidebarComponent } from './myComponents/pd-sidebar/pd-sidebar.component';
 import { PdSideofferComponent } from './myComponents/pd-sideoffer/pd-sideoffer.component';
+import { OrdersHomeComponent } from './orders-home/orders-home.component';
+import { OrdersItemComponent } from './orders-item/orders-item.component';
+import { OrdersItemcardComponent } from './orders-itemcard/orders-itemcard.component';
+
 
 @NgModule({
   declarations: [
@@ -126,6 +130,9 @@ import { PdSideofferComponent } from './myComponents/pd-sideoffer/pd-sideoffer.c
     PdSidebarComponent,
     PdSideofferComponent,
     PdhomeComponent,
+    OrdersHomeComponent,
+    OrdersItemComponent,
+    OrdersItemcardComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

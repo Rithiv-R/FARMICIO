@@ -1,14 +1,16 @@
 <div class="con1">
-    <div class="card">
-        <div class="head">
-            Order summary
-        </div>
-        <div class="entry">
-            Cart value:<span class="p">₹50</span>
-        </div>
-        <hr>
-        <div class="sum">
-            Total to be paid:<span class="p">₹50</span>
+    <div *ngFor="let i of price">
+        <div class="card">
+            <div class="head">
+                Order summary
+            </div>
+            <div class="entry">
+                Cart value:<span class="p">₹{{i['price']}}</span>
+            </div>
+            <hr>
+            <div class="sum">
+                Total to be paid:<span class="p">₹{{i['price']}}</span>
+            </div>
         </div>
     </div>
 </div>

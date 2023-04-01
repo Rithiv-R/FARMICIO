@@ -1,12 +1,12 @@
 <div class="con1" >
     <div class="card" >
         <div class="image">
-            <img src="./../../../assets/images/apple-removebg-preview.png" height="100px">
+            <img [src]=cartitem1.image height="100px">
         </div>
         <div class="details">
-            <p id="name">apple</p>
-            <p id="quan">Quan: 20kg</p>
-            <p id="price">Price of perkg: 100</p>
+            <p id="name">{{cartitem1['name']}}</p>
+            <p id="quan">{{cartitem1['quantity']}}</p>
+            <p id="price">{{cartitem1['price']}} per kg</p>
         </div>
         <div class="buttons" >
             <i class="fa-solid fa-trash-can"></i>

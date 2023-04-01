@@ -1,0 +1,19 @@
+<div class="con1">
+    <div class="card">
+
+        <div class="top">
+            <div class="head">
+               order id:{{item['id']}}
+            </div>
+            <div class="details">
+                <p> Delivery Address: {{item['address']}}</p>
+            </div>
+        </div>
+        
+        
+        <div class="items" *ngFor="let i of itemlist">
+            <app-orders-itemcard  [itemspecific]="i"></app-orders-itemcard>
+        </div>
+        
+    </div>
+</div>

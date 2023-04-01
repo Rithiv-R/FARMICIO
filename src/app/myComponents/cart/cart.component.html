@@ -6,19 +6,20 @@
 </div>
 <div class="grid">
     <div class="left">
-        <div>
-            <app-cart-item></app-cart-item>
-        </div>
+        <app-cart-item  [array]="array"></app-cart-item>
     </div>
     <div class="right">
-        <app-cart-addons></app-cart-addons>
-        <app-cart-total></app-cart-total>
+        <app-cart-addons (Addnew)="setadd($event)"></app-cart-addons>
+        <app-cart-total ></app-cart-total>
     </div>
 </div>
-<div class="submit">
-    <button>Confirm ORDER</button>
+<div *ngIf="address">
+    <h3>Selected Address</h3>
+    <p>{{address}}</p>
 </div>
-
+<div class="submit">
+    <button (click)="confirm()">Confirm ORDER</button>
+</div>
 <div class="feature">
     <app-features></app-features>
 </div>

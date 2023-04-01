@@ -1,10 +1,10 @@
 <div class="con1">
     <div class="card">
         <div class="addcoupn">
-            <textarea placeholder="Enter your delivery addrss......"></textarea>
+            <textarea type="text" #address placeholder="Enter your delivery addrss......"  ></textarea>
         </div>
         <div class="address">
-           <button type="submit">Submit Address</button>
+           <button type="submit" (click)="send(address.value)">Submit Address</button>
         </div>
     </div>
 </div>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { GetcartlistService } from 'src/app/services/getcartlist.service';
 
 @Component({
   selector: 'app-cart-itemcard',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartItemcardComponent implements OnInit {
 
-  constructor() { }
+  @Input() cartitem1 : any;
+  constructor(private auth:AngularFireAuth) {
+  }
 
   ngOnInit(): void {
   }
+
 
 }

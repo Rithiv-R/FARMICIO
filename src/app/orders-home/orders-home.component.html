@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<div class="path">
+    Your Orders
+</div>
+
+<div *ngFor="let i of myarr">
+    <div class="orders" >
+        <app-orders-item [item]="i" [itemlist]="i['products']"></app-orders-item>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

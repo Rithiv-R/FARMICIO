@@ -18,23 +18,36 @@ export class GetcartlistService {
     })
   }
 
-  async getlist()
-  {
-    console.log('s');
-    var temp1:any[] = [];
+  getlist(email1:any):any
+  { 
     var temp:any[] = [];
-    this.afs.collection('cart').doc(this.email).collection('cartorders').get().toPromise().then((querysnapshot)=>{   
+    var price = 0;
+    this.afs.collection('cart').doc(email1).collection('cartorders').get().toPromise().then((querysnapshot)=>{   
       querysnapshot?.forEach((doc)=>{
+        price = price + Number(doc.data()['price'])*Number(doc.data()['quantity'])
         temp.push({
           id:doc.data()['id'],
-          pid:doc.data()['pid'],
+          name:doc.data()['name'],
+          image:doc.data()['image'],
           quantity:doc.data()['quantity'],
           price:doc.data()['price'],
         });
       })
-      console.log(temp);
-      return temp;
     });
+    return temp;
   }
+
+ getprice(email1:any){
+    var price = 0;
+    var tempo: any = [];
+    this.afs.collection('cart').doc(email1).collection('cartorders').get().toPromise().then((querysnapshot)=>{   
+      querysnapshot?.forEach((doc)=>{
+        price = price + Number(doc.data()['price'])*Number(doc.data()['quantity'])  ; 
+      })
+      tempo.push({price:price});
+    });
+    return tempo;
+  }
+
 
 }

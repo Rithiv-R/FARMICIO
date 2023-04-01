@@ -16,6 +16,7 @@ import { StartComponent } from './myComponents/start/start.component';
 import { UserLoginComponent } from './myComponents/user-login/user-login.component';
 import { UserLogin1Component } from './myComponents/user-login1/user-login1.component';
 import { UserSignupComponent } from './myComponents/user-signup/user-signup.component';
+import { OrdersHomeComponent } from './orders-home/orders-home.component';
 
 const routes: Routes = [
   {path: '' , component: UserLoginComponent},
@@ -30,7 +31,7 @@ const routes: Routes = [
   {path: 'aboutus',component:AboutusComponent},
   {path:'cart',component:CartComponent},
   {path:'product/:pid',component:PdhomeComponent},
-  
+  {path:'orders',component:OrdersHomeComponent}
 ];
 
 @NgModule({

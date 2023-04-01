@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProdaddService } from 'src/app/services/prodadd.service';
 
 @Component({
   selector: 'app-shop-main',
@@ -8,9 +9,19 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ShopMainComponent implements OnInit {
 
   @Input() itemarray:any;
-  constructor() { }
+  constructor(public service:ProdaddService) { }
 
   ngOnInit(): void {
   }
+
+  adder(){
+    this.service.adder();
+  }
+  
+  add1()
+  {
+    this.service.add1();
+  }
+
 
 }

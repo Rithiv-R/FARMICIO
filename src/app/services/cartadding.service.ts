@@ -15,11 +15,12 @@ export class CartaddingService {
  
   usermail!:any;
 
-  adder(pid:any,email:any,quantity:any,price:any):void{
+  adder(name:any,image:any,email:any,quantity:any,price:any):void{
     console.log('s');
     this.afs.collection('cart').doc(email).set({'email':email}).then(()=>{
       this.afs.collection('cart').doc(email).collection('cartorders').add({
-        pid:pid,
+        name:name,
+        image:image,
         quantity:quantity,
         price:price,
       }).then((doc)=>{

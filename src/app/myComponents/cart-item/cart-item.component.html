@@ -1,5 +1,5 @@
 <div class="item">
-    <app-cart-itemcard></app-cart-itemcard>
-    <app-cart-itemcard></app-cart-itemcard>
-    <app-cart-itemcard></app-cart-itemcard>
+    <div *ngFor="let cartted of array">
+        <app-cart-itemcard [cartitem1]="cartted"></app-cart-itemcard>
+    </div>
 </div>

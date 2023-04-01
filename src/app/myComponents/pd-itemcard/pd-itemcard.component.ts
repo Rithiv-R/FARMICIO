@@ -29,7 +29,7 @@ export class PdItemcardComponent implements OnInit {
 
   addorder()
   {
-    this.service.adder(this.item.id,this.email,this.selectedinput,this.item.price);
+    this.service.adder(this.item.name,this.item.image,this.email,this.selectedinput,this.item.price);
   }
 
 }

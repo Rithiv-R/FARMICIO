@@ -19,17 +19,13 @@
     padding: 0px 10px 0px 0px;
 }
 
-.info #head{
-    font-size: 14px;
+.info{
+    font-size: 16px;
     display: flex;
     font-weight: 500;
     flex-direction: row;
     align-items:center;
     padding-bottom: 10px;
-}
-
-.info #head i{
-    font-size: 18px;
 }
 
 .bottom{

@@ -16,7 +16,7 @@ export class CartaddingService {
   usermail!:any;
 
   adder(name:any,image:any,email:any,quantity:any,price:any):void{
-    console.log('s');
+   
     this.afs.collection('cart').doc(email).set({'email':email}).then(()=>{
       this.afs.collection('cart').doc(email).collection('cartorders').add({
         name:name,
